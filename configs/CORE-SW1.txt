@@ -1,7 +1,32 @@
-
-Current configuration : 5627 bytes
+Current configuration : 6016 bytes
 !
-! Last configuration change at 19:03:56 UTC Fri Sep 25 2026
+! Last configuration change at 19:47:23 UTC Thu Oct 1 2026
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname CORE-SW1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+username admin secret 5 $1$vpbh$tGFOrIIsLcYj0r.G0e5V8.
+no aaa new-model
+!
+!
+!
+
+CORE-SW1#show run
+Building configuration...
+
+Current configuration : 6016 bytes
+!
+! Last configuration change at 19:47:23 UTC Thu Oct 1 2026
 !
 version 15.2
 service timestamps debug datetime msec
@@ -59,9 +84,10 @@ interface Port-channel1
  switchport mode trunk
 !
 interface Port-channel2
- no switchport
- ip address 10.0.0.1 255.255.255.252
- ip ospf network point-to-point
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
 !
 interface GigabitEthernet0/0
  no switchport
@@ -125,16 +151,20 @@ interface GigabitEthernet3/1
  negotiation auto
 !
 interface GigabitEthernet3/2
- no switchport
- no ip address
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
  negotiation auto
- channel-group 2 mode active
+ channel-group 2 mode on
 !
 interface GigabitEthernet3/3
- no switchport
- no ip address
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
  negotiation auto
- channel-group 2 mode active
+ channel-group 2 mode on
 !
 interface Vlan20
  ip address 10.10.20.1 255.255.255.0
@@ -183,6 +213,11 @@ ip http server
 ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 !
+ip access-list standard VTY_ACCESS
+ permit 192.168.222.1
+ permit 10.10.99.0 0.0.0.255
+ deny   any
+!
 ip access-list extended RESTRICT_GUESTS
  deny   ip any 10.10.20.0 0.0.0.255
  deny   ip any 10.10.30.0 0.0.0.255
@@ -226,6 +261,7 @@ banner login ^C
 line con 0
 line aux 0
 line vty 0 4
+ access-class VTY_ACCESS in
  login
 !
 !

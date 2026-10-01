@@ -1,8 +1,6 @@
-Building configuration...
-
-Current configuration : 5307 bytes
+Current configuration : 5489 bytes
 !
-! Last configuration change at 18:40:59 UTC Thu Sep 24 2026
+! Last configuration change at 19:47:20 UTC Thu Oct 1 2026
 !
 version 15.2
 service timestamps debug datetime msec
@@ -17,6 +15,7 @@ boot-end-marker
 !
 !
 !
+username admin secret 5 $1$QPVY$iyOUJ/1zP4IjTe0YFaKR50
 no aaa new-model
 !
 !
@@ -25,12 +24,11 @@ no aaa new-model
 !
 vtp mode transparent
 no ip routing
-ip arp inspection vlan 20,30,40,99
 !
 !
 !
 ip dhcp snooping vlan 20,30,40
-ip dhcp snooping
+ip domain-name lab.local
 no ip cef
 no ipv6 cef
 !
@@ -181,6 +179,11 @@ ip http server
 ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 !
+ip access-list standard VTY_ACCESS
+ permit 192.168.222.1
+ permit 10.10.99.0 0.0.0.255
+ deny   any
+!
 !
 !
 !
@@ -219,9 +222,9 @@ banner login ^C
 line con 0
 line aux 0
 line vty 0 4
- login
+ access-class VTY_ACCESS in
+ login local
+ transport input ssh
 !
 !
 end
-
-ACCESS-SW2#
