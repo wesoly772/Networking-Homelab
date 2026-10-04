@@ -1,0 +1,36 @@
+---
+- name: Infrastrucutre Backup Config
+  hosts: cisco_switches
+  gather_facts: no
+  tasks:
+    - name: Download config from devices
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register: cisco_config
+
+    - name: Save config to file
+      ansible.builtin.copy:
+        content: "{{ cisco_config.stdout[0] }}"
+        dest: "../../configs/{{ inventory_hostname }}.txt"
+      delegate_to: localhost
+
+- name: Push backup to GitHub
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Stage file, commit and Push
+      ansible.builtin.shell: |
+        git add "../../configs/*.txt"
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "Auto-backup Cisco (Ansible): $(date +'%Y-%m-%d %H:%M')"
+          git push origin main
+        else
+          echo "No configuration changes found. Skipping commit."
+        fi
+      register: git_output
+      changed_when: "'Auto-bakup' in git_output.stdout"
+    - name: Git result
+      debug:
+        msg: "{{git_output.stdout}}"
