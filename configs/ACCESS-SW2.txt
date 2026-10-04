@@ -1,11 +1,13 @@
-Current configuration : 5489 bytes
+Building configuration...
+
+Current configuration : 5629 bytes
 !
-! Last configuration change at 19:47:20 UTC Thu Oct 1 2026
+! Last configuration change at 08:53:07 UTC Sun Oct 4 2026
 !
 version 15.2
 service timestamps debug datetime msec
 service timestamps log datetime msec
-no service password-encryption
+service password-encryption
 service compress-config
 !
 hostname ACCESS-SW2
@@ -14,6 +16,7 @@ boot-start-marker
 boot-end-marker
 !
 !
+enable secret 5 $1$6yRi$6n1r9AHyzNTZJLg17Ys4u1
 !
 username admin secret 5 $1$QPVY$iyOUJ/1zP4IjTe0YFaKR50
 no aaa new-model
@@ -50,7 +53,7 @@ vlan 40
 vlan 99
  name Management
 !
-!
+! 
 !
 !
 !
@@ -172,6 +175,10 @@ interface GigabitEthernet3/3
  channel-group 2 mode active
  ip dhcp snooping trust
 !
+interface Vlan99
+ ip address 10.10.99.4 255.255.255.0
+!
+ip default-gateway 10.10.99.3
 ip forward-protocol nd
 !
 ip http server
@@ -180,7 +187,7 @@ ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 !
 ip access-list standard VTY_ACCESS
- permit 192.168.222.1
+ permit 192.168.222.0 0.0.0.255
  permit 10.10.99.0 0.0.0.255
  deny   any
 !

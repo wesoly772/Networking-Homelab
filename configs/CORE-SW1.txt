@@ -1,37 +1,13 @@
-Current configuration : 6016 bytes
-!
-! Last configuration change at 19:47:23 UTC Thu Oct 1 2026
-!
-version 15.2
-service timestamps debug datetime msec
-service timestamps log datetime msec
-no service password-encryption
-service compress-config
-!
-hostname CORE-SW1
-!
-boot-start-marker
-boot-end-marker
-!
-!
-!
-username admin secret 5 $1$vpbh$tGFOrIIsLcYj0r.G0e5V8.
-no aaa new-model
-!
-!
-!
-
-CORE-SW1#show run
 Building configuration...
 
-Current configuration : 6016 bytes
+Current configuration : 6249 bytes
 !
-! Last configuration change at 19:47:23 UTC Thu Oct 1 2026
+! Last configuration change at 08:52:22 UTC Sun Oct 4 2026
 !
 version 15.2
 service timestamps debug datetime msec
 service timestamps log datetime msec
-no service password-encryption
+service password-encryption
 service compress-config
 !
 hostname CORE-SW1
@@ -40,8 +16,9 @@ boot-start-marker
 boot-end-marker
 !
 !
+enable secret 5 $1$BSuW$xmhrvxZI1GI95Fmn27Kik.
 !
-username admin secret 5 $1$vpbh$tGFOrIIsLcYj0r.G0e5V8.
+username admin secret 5 $1$OFmX$.AaDToMbpUq.JPFbQpCjm/
 no aaa new-model
 !
 !
@@ -64,7 +41,7 @@ spanning-tree vlan 20 priority 24576
 spanning-tree vlan 30,40 priority 28672
 !
 !
-!
+! 
 !
 !
 !
@@ -193,6 +170,9 @@ interface Vlan40
 !
 interface Vlan99
  ip address 10.10.99.1 255.255.255.0
+ standby 1 ip 10.10.99.3
+ standby 1 priority 110
+ standby 1 preempt
 !
 router ospf 1
  router-id 1.1.1.1
@@ -210,11 +190,13 @@ ip forward-protocol nd
 !
 ip http server
 !
-ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh server algorithm encryption aes256-cbc aes192-ctr aes128-ctr
+ip ssh server algorithm authentication password
+ip ssh server algorithm publickey ssh-rsa x509v3-ssh-rsa
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 !
 ip access-list standard VTY_ACCESS
- permit 192.168.222.1
+ permit 192.168.222.0 0.0.0.255
  permit 10.10.99.0 0.0.0.255
  deny   any
 !
@@ -262,7 +244,7 @@ line con 0
 line aux 0
 line vty 0 4
  access-class VTY_ACCESS in
- login
+ login local
 !
 !
 end
