@@ -1256,7 +1256,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791489584.89" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791489695.28" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules/>
@@ -2032,8 +2032,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/toggle_ruleset/emerging-malware.rules,emerging-scan.rules,emerging-web_server.rules,emerging-exploit.rules,emerging-dos.rules,emerging-web_specific_apps.rules,emerging-sql.rules/1 made changes</description>
-    <time>1791489584.89</time>
+    <description>/api/ids/settings/set_ruleset/emerging-malware.rules made changes</description>
+    <time>1791489695.28</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
