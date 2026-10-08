@@ -1256,11 +1256,40 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791475180.09" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791489584.89" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules/>
-      <files/>
+      <files>
+        <file uuid="4812017c-2f80-479f-a5ed-11f056f26799">
+          <filename>emerging-malware.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="2ab67d59-5892-4fe9-9e8f-3d42b351885a">
+          <filename>emerging-scan.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="1c71ff66-53b6-40ba-9368-ad90d660bc13">
+          <filename>emerging-web_server.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="0aa8fea3-7ba6-4689-b86b-0226592f7d4e">
+          <filename>emerging-exploit.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="0521bc3b-180c-4a48-aaef-37e9696764e7">
+          <filename>emerging-dos.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="18aa881e-014f-449a-8bb8-9bdfe6affea7">
+          <filename>emerging-web_specific_apps.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="6d99f775-4874-4821-8981-192cd41d303a">
+          <filename>emerging-sql.rules</filename>
+          <enabled>1</enabled>
+        </file>
+      </files>
       <fileTags/>
       <general>
         <enabled>1</enabled>
@@ -2003,8 +2032,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/set_rule/97dd2efd-a114-4357-ba11-685c67672bf1 made changes</description>
-    <time>1791486034.48</time>
+    <description>/api/ids/settings/toggle_ruleset/emerging-malware.rules,emerging-scan.rules,emerging-web_server.rules,emerging-exploit.rules,emerging-dos.rules,emerging-web_specific_apps.rules,emerging-sql.rules/1 made changes</description>
+    <time>1791489584.89</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
