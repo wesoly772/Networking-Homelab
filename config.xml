@@ -835,7 +835,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       <Lvtemplate version="0.0.1" persisted_at="1790095152.16" description="Firewall Live View filter templates">
         <templates/>
       </Lvtemplate>
-      <Alias version="1.0.1" persisted_at="1790623081.74" description="Firewall aliases">
+      <Alias version="1.0.1" persisted_at="1791481737.20" description="Firewall aliases">
         <geoip>
           <url/>
         </geoip>
@@ -993,6 +993,24 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <content>10.10.20.0/24
 10.10.99.0/24
 10.10.30.0/24</content>
+            <password/>
+            <username/>
+            <authtype/>
+            <expire/>
+            <categories/>
+            <description/>
+          </alias>
+          <alias uuid="799545a9-fce8-4198-9b8d-21481802a099">
+            <enabled>1</enabled>
+            <name>MGMT_HOSTS</name>
+            <type>host</type>
+            <path_expression/>
+            <proto/>
+            <interface/>
+            <counters>0</counters>
+            <updatefreq/>
+            <content>192.168.222.1
+192.168.222.171</content>
             <password/>
             <username/>
             <authtype/>
@@ -1802,8 +1820,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/del_rule/1121b51b-969d-48c3-b5db-893f9c22fabf made changes</description>
-    <time>1791478893.03</time>
+    <description>/api/firewall/alias/add_item/ made changes</description>
+    <time>1791481737.20</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
