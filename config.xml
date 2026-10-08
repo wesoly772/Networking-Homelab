@@ -1256,7 +1256,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791492215.45" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791492241.75" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules>
@@ -2054,8 +2054,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/add_user_rule/ made changes</description>
-    <time>1791492215.45</time>
+    <description>/api/ids/settings/set_user_rule/baaf3663-457a-4760-b92e-cd2d7c359cf2 made changes</description>
+    <time>1791492241.75</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
