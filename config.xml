@@ -1256,9 +1256,19 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791489695.28" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791489837.60" description="Intrusion detection">
       <rules/>
-      <policies/>
+      <policies>
+        <policy uuid="9669d9d3-1adc-4a60-9e90-8461a7d29cb1">
+          <enabled>1</enabled>
+          <prio>0</prio>
+          <action>alert</action>
+          <rulesets>4812017c-2f80-479f-a5ed-11f056f26799</rulesets>
+          <content/>
+          <new_action>drop</new_action>
+          <description>test</description>
+        </policy>
+      </policies>
       <userDefinedRules/>
       <files>
         <file uuid="4812017c-2f80-479f-a5ed-11f056f26799">
@@ -2032,8 +2042,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/set_ruleset/emerging-malware.rules made changes</description>
-    <time>1791489695.28</time>
+    <description>/api/ids/settings/add_policy/ made changes</description>
+    <time>1791489837.60</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
