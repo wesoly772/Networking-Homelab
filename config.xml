@@ -1256,7 +1256,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791489837.60" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791490605.08" description="Intrusion detection">
       <rules/>
       <policies>
         <policy uuid="9669d9d3-1adc-4a60-9e90-8461a7d29cb1">
@@ -1297,6 +1297,18 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </file>
         <file uuid="6d99f775-4874-4821-8981-192cd41d303a">
           <filename>emerging-sql.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="5ee34753-d81a-4719-a62f-2042a52f4598">
+          <filename>threatview_CS_c2.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="ddc3823e-6a1a-4e79-bf16-b7fe2c7959ca">
+          <filename>emerging-attack_response.rules</filename>
+          <enabled>1</enabled>
+        </file>
+        <file uuid="56c9e6ed-2db6-4252-ac10-3415eac70005">
+          <filename>emerging-remote_access.rules</filename>
           <enabled>1</enabled>
         </file>
       </files>
@@ -2042,8 +2054,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/add_policy/ made changes</description>
-    <time>1791489837.60</time>
+    <description>/api/ids/settings/toggle_ruleset/threatview_CS_c2.rules,emerging-attack_response.rules,emerging-remote_access.rules/1 made changes</description>
+    <time>1791490605.08</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
