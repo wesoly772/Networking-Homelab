@@ -308,7 +308,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791297265.54" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791478869.33" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -754,11 +754,11 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <protocol>any</protocol>
             <icmptype/>
             <icmp6type/>
-            <source_net>VLAN20_SERVERS,VLAN30_USERS,VLAN99_MGMT,opt1,opt2</source_net>
+            <source_net>VLAN30_USERS,VLAN40_GUESTS</source_net>
             <source_not>0</source_not>
             <source_port/>
-            <destination_net>any</destination_net>
-            <destination_not>0</destination_not>
+            <destination_net>(self)</destination_net>
+            <destination_not>1</destination_not>
             <destination_port/>
             <divert-to/>
             <gateway/>
@@ -797,7 +797,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <shaper1/>
             <shaper2/>
             <description>ALLOW_LAN_INTERNET</description>
-            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTA2MjI2MzMuNDIiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTA4NzgzNDkuMDgiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
+            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTA2MjI2MzMuNDIiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE0Nzg4NjkuMzMiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
           </rule>
           <rule uuid="1121b51b-969d-48c3-b5db-893f9c22fabf">
             <enabled>1</enabled>
@@ -1863,8 +1863,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/diag_backup.php made changes</description>
-    <time>1791477695.54</time>
+    <description>/api/firewall/filter/set_rule/8c7d03fa-c165-4874-b5a0-e1059e9797da made changes</description>
+    <time>1791478869.33</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
