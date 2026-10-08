@@ -308,7 +308,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791482108.62" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791483741.90" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -452,7 +452,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <source_net>opt3</source_net>
             <source_not>0</source_not>
             <source_port/>
-            <destination_net>VLAN20_SERVERS,VLAN30_USERS,VLAN40_GUESTS,VLAN99_MGMT,opt1,opt2</destination_net>
+            <destination_net>VLAN20_SERVERS,VLAN30_USERS,VLAN40_GUESTS,VLAN99_MGMT,(self),opt1,opt2</destination_net>
             <destination_not>0</destination_not>
             <destination_port/>
             <divert-to/>
@@ -492,7 +492,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <shaper1/>
             <shaper2/>
             <description>BLOCK DMZ TO LAN</description>
-            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTAxODk4OTMuMzEiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTA2MjEwMjYuNDEiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
+            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTAxODk4OTMuMzEiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE0ODM3NDEuOTAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
           </rule>
           <rule uuid="97dd2efd-a114-4357-ba11-685c67672bf1">
             <enabled>1</enabled>
@@ -1942,8 +1942,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/add_rule/ made changes</description>
-    <time>1791482108.62</time>
+    <description>/api/firewall/filter/set_rule/8f3d5ef9-9d47-4aa2-b68b-d2c600a0669a made changes</description>
+    <time>1791483741.90</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
