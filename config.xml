@@ -1140,7 +1140,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       <Lvtemplate version="0.0.1" persisted_at="1790095152.16" description="Firewall Live View filter templates">
         <templates/>
       </Lvtemplate>
-      <Alias version="1.0.1" persisted_at="1791547755.68" description="Firewall aliases">
+      <Alias version="1.0.1" persisted_at="1791547757.32" description="Firewall aliases">
         <geoip>
           <url/>
         </geoip>
@@ -2181,8 +2181,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/alias/set_item/799545a9-fce8-4198-9b8d-21481802a099 made changes</description>
-    <time>1791547755.68</time>
+    <description>/api/firewall/alias/set made changes</description>
+    <time>1791547757.32</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
