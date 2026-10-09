@@ -2256,7 +2256,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553472.12" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553472.31" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2330,7 +2330,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <Version>sqlite3</Version>
           <FullVersion/>
           <Remote>false</Remote>
-          <Prefix/>
+          <Prefix>zenarmor_0000000000_cf09004d-9ba7-4ea5-9876-9fb45068f39d_</Prefix>
           <ClusterUUID/>
           <retireAfter>2</retireAfter>
           <dbpath>/usr/local/datastore/sqlite</dbpath>
@@ -2494,7 +2494,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   <revision>
     <username>root@192.168.222.1</username>
     <description>/api/zenarmor/installer/complete made changes</description>
-    <time>1791553472.12</time>
+    <time>1791553472.31</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
