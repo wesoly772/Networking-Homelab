@@ -2185,7 +2185,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <proxy version="1.0.9" persisted_at="1791565244.70" description="Squid web proxy settings">
+    <proxy version="1.0.9" persisted_at="1791565906.25" description="Squid web proxy settings">
       <general>
         <enabled>1</enabled>
         <error_pages>opnsense</error_pages>
@@ -2242,12 +2242,12 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </parentproxy>
       </general>
       <forward>
-        <interfaces/>
+        <interfaces>opt1,opt2</interfaces>
         <port>3128</port>
         <sslbumpport>3129</sslbumpport>
-        <sslbump>0</sslbump>
+        <sslbump>1</sslbump>
         <sslurlonly>0</sslurlonly>
-        <sslcertificate/>
+        <sslcertificate>6ac53583b8679</sslcertificate>
         <sslnobumpsites/>
         <workers/>
         <ssl_crtd_storage_max_size>4</ssl_crtd_storage_max_size>
@@ -2259,7 +2259,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <ftpPort>2121</ftpPort>
         <ftpTransparentMode>0</ftpTransparentMode>
         <addACLforInterfaceSubnets>1</addACLforInterfaceSubnets>
-        <transparentMode>0</transparentMode>
+        <transparentMode>1</transparentMode>
         <acl>
           <allowedSubnets/>
           <unrestricted/>
@@ -2307,8 +2307,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/d_nat/add_rule/ made changes</description>
-    <time>1791565831.14</time>
+    <description>/api/proxy/settings/set made changes</description>
+    <time>1791565906.25</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
