@@ -2243,7 +2243,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553027.85" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553028.38" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2444,7 +2444,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <port>9200</port>
         <esVersion/>
         <User/>
-        <Pass/>
+        <Pass>b64:</Pass>
         <ClusterUUID/>
       </streamReportDataExternal>
       <dns>
@@ -2481,7 +2481,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   <revision>
     <username>(root)</username>
     <description>/usr/local/opnsense/mvc/app/library/OPNsense/Zenarmor/CLI.php made changes</description>
-    <time>1791553027.85</time>
+    <time>1791553028.38</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
