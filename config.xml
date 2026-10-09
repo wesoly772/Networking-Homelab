@@ -1378,7 +1378,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791551469.21" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791551469.33" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules>
@@ -2186,7 +2186,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   <revision>
     <username>root@192.168.222.1</username>
     <description>/api/ids/settings/set made changes</description>
-    <time>1791551469.21</time>
+    <time>1791551469.33</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
