@@ -311,7 +311,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791567045.14" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791567644.37" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -929,7 +929,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <statetype>keep</statetype>
             <state-policy/>
             <sequence>456</sequence>
-            <action>pass</action>
+            <action>block</action>
             <quick>1</quick>
             <interfacenot>0</interfacenot>
             <interface>opt1,opt2</interface>
@@ -937,15 +937,15 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <received-on/>
             <direction>in</direction>
             <ipprotocol>inet</ipprotocol>
-            <protocol>TCP</protocol>
+            <protocol>TCP/UDP</protocol>
             <icmptype/>
             <icmp6type/>
-            <source_net>VLAN20_SERVERS,VLAN30_USERS,VLAN40_GUESTS</source_net>
+            <source_net>LAN_NETWORKS</source_net>
             <source_not>0</source_not>
             <source_port/>
             <destination_net>any</destination_net>
             <destination_not>0</destination_not>
-            <destination_port/>
+            <destination_port>http</destination_port>
             <divert-to/>
             <gateway/>
             <replyto/>
@@ -982,8 +982,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <tos/>
             <shaper1/>
             <shaper2/>
-            <description/>
-            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE0ODUwMzguMjAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1NjcwNDUuMTMiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
+            <description>block http bypass</description>
+            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE0ODUwMzguMjAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc2NDQuMzYiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
           </rule>
           <rule uuid="778ef105-e9d0-4195-a3ee-ba3ba83c9270">
             <enabled>1</enabled>
@@ -2379,8 +2379,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/proxy/settings/set_remote_blacklist/73e1e75b-da08-42b0-a4b5-78addeb537fa made changes</description>
-    <time>1791567443.84</time>
+    <description>/api/firewall/filter/set_rule/5f1fdfb5-3eda-48cb-a610-0f547fb0f12e made changes</description>
+    <time>1791567644.37</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
