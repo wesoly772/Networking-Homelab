@@ -2256,7 +2256,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553030.97" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553098.44" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2492,9 +2492,9 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
     </Zenarmor>
   </OPNsense>
   <revision>
-    <username>(root)</username>
-    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
-    <time>1791553033.55</time>
+    <username>root@192.168.222.1</username>
+    <description>/api/zenarmor/configuration/deployment?deploymentMode=routedG&amp;showWan=false made changes</description>
+    <time>1791553098.44</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
