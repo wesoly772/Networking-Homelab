@@ -311,7 +311,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791566301.15" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791566380.49" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -1171,7 +1171,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </rules>
         <snatrules>
           <rule uuid="11bf1493-4f62-482f-aa49-6104262667cd">
-            <enabled>1</enabled>
+            <enabled>0</enabled>
             <nonat>0</nonat>
             <nosync>0</nosync>
             <sequence>100</sequence>
@@ -2368,8 +2368,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/toggle_rule/5f1fdfb5-3eda-48cb-a610-0f547fb0f12e/0 made changes</description>
-    <time>1791566301.15</time>
+    <description>/api/firewall/source_nat/toggle_rule/11bf1493-4f62-482f-aa49-6104262667cd/0 made changes</description>
+    <time>1791566380.49</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
