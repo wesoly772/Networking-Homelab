@@ -2307,7 +2307,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <proxy version="1.0.9" persisted_at="1791567443.84" description="Squid web proxy settings">
+    <proxy version="1.0.9" persisted_at="1791568135.34" description="Squid web proxy settings">
       <general>
         <enabled>1</enabled>
         <error_pages>opnsense</error_pages>
@@ -2370,7 +2370,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <sslbump>1</sslbump>
         <sslurlonly>0</sslurlonly>
         <sslcertificate>6ac53583b8679</sslcertificate>
-        <sslnobumpsites/>
+        <sslnobumpsites>google.com</sslnobumpsites>
         <workers/>
         <ssl_crtd_storage_max_size>4</ssl_crtd_storage_max_size>
         <sslcrtd_children>5</sslcrtd_children>
@@ -2440,8 +2440,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/set_rule/fcddb5e7-986b-4566-b3b9-67c50149cb0d made changes</description>
-    <time>1791567717.45</time>
+    <description>/api/proxy/settings/set made changes</description>
+    <time>1791568135.34</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
