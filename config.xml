@@ -311,7 +311,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791567693.38" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791567717.45" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -1226,8 +1226,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <tos/>
             <shaper1/>
             <shaper2/>
-            <description>block http bypass</description>
-            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc2ODguNDAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc2ODguNDAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
+            <description>block https bypass</description>
+            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc2ODguNDAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc3MTcuNDQiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
           </rule>
         </rules>
         <snatrules>
@@ -2440,8 +2440,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/move_rule_before/fcddb5e7-986b-4566-b3b9-67c50149cb0d/8c7d03fa-c165-4874-b5a0-e1059e9797da made changes</description>
-    <time>1791567693.38</time>
+    <description>/api/firewall/filter/set_rule/fcddb5e7-986b-4566-b3b9-67c50149cb0d made changes</description>
+    <time>1791567717.45</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
