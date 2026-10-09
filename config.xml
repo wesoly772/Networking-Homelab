@@ -1378,10 +1378,20 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791549203.56" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791549231.12" description="Intrusion detection">
       <rules/>
       <policies/>
-      <userDefinedRules/>
+      <userDefinedRules>
+        <rule uuid="46bbbfaf-6684-4e7c-b25c-a84335731039">
+          <enabled>1</enabled>
+          <source>10.10.30.10</source>
+          <destination>192.168.222.174</destination>
+          <fingerprint/>
+          <description>TEST-ICMP-RULE</description>
+          <action>alert</action>
+          <bypass>0</bypass>
+        </rule>
+      </userDefinedRules>
       <files>
         <file uuid="4812017c-2f80-479f-a5ed-11f056f26799">
           <filename>emerging-malware.rules</filename>
@@ -2175,8 +2185,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/set_rulesetproperties made changes</description>
-    <time>1791549203.56</time>
+    <description>/api/ids/settings/add_user_rule/ made changes</description>
+    <time>1791549231.12</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
