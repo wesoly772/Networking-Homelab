@@ -311,7 +311,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791567644.37" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791567688.41" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -1167,6 +1167,67 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <shaper2/>
             <description/>
             <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1NjYyNDEuMzkiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1NjYyNDEuMzkiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
+          </rule>
+          <rule uuid="fcddb5e7-986b-4566-b3b9-67c50149cb0d">
+            <enabled>1</enabled>
+            <statetype>keep</statetype>
+            <state-policy/>
+            <sequence>1311</sequence>
+            <action>block</action>
+            <quick>1</quick>
+            <interfacenot>0</interfacenot>
+            <interface>opt1,opt2</interface>
+            <received-on-not>0</received-on-not>
+            <received-on/>
+            <direction>in</direction>
+            <ipprotocol>inet</ipprotocol>
+            <protocol>TCP/UDP</protocol>
+            <icmptype/>
+            <icmp6type/>
+            <source_net>LAN_NETWORKS</source_net>
+            <source_not>0</source_not>
+            <source_port/>
+            <destination_net>any</destination_net>
+            <destination_not>0</destination_not>
+            <destination_port>https</destination_port>
+            <divert-to/>
+            <gateway/>
+            <replyto/>
+            <disablereplyto>0</disablereplyto>
+            <log>0</log>
+            <allowopts>0</allowopts>
+            <nosync>0</nosync>
+            <nopfsync>0</nopfsync>
+            <statetimeout/>
+            <udp-first/>
+            <udp-multiple/>
+            <udp-single/>
+            <max-src-nodes/>
+            <max-src-states/>
+            <max-src-conn/>
+            <max/>
+            <max-src-conn-rate/>
+            <max-src-conn-rates/>
+            <max-pkt-rate-number/>
+            <max-pkt-rate-seconds/>
+            <overload/>
+            <adaptivestart/>
+            <adaptiveend/>
+            <prio/>
+            <set-prio/>
+            <set-prio-low/>
+            <tag/>
+            <tagged/>
+            <tcpflags1/>
+            <tcpflags2/>
+            <tcpflags_any>0</tcpflags_any>
+            <categories/>
+            <sched/>
+            <tos/>
+            <shaper1/>
+            <shaper2/>
+            <description>block http bypass</description>
+            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc2ODguNDAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njc2ODguNDAiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
           </rule>
         </rules>
         <snatrules>
@@ -2379,8 +2440,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/set_rule/5f1fdfb5-3eda-48cb-a610-0f547fb0f12e made changes</description>
-    <time>1791567644.37</time>
+    <description>/api/firewall/filter/add_rule/ made changes</description>
+    <time>1791567688.41</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
