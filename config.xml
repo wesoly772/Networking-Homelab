@@ -2256,7 +2256,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553309.46" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553393.50" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2322,17 +2322,17 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <MongoStreamURI/>
         </bigquery>
         <database>
-          <Type>ES</Type>
-          <Host>http://127.0.0.1</Host>
-          <Port>9200</Port>
+          <Type/>
+          <Host/>
+          <Port/>
           <User/>
           <Pass/>
-          <Version>56800</Version>
+          <Version/>
           <FullVersion/>
-          <Remote>false</Remote>
-          <Prefix>zenarmor_0000000000_cf09004d-9ba7-4ea5-9876-9fb45068f39d_</Prefix>
+          <Remote/>
+          <Prefix/>
           <ClusterUUID/>
-          <retireAfter/>
+          <retireAfter>2</retireAfter>
           <dbpath/>
         </database>
         <swapRate>60</swapRate>
@@ -2493,8 +2493,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/zenarmor/configuration/deployment?deploymentMode=routedG&amp;showWan=false made changes</description>
-    <time>1791553309.46</time>
+    <description>/api/zenarmor/installer/install_database made changes</description>
+    <time>1791553393.50</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
