@@ -99,7 +99,7 @@
     <firmware version="1.0.1" persisted_at="1790095151.41" description="Firmware settings">
       <mirror/>
       <flavour/>
-      <plugins>os-etpro-telemetry,os-frr,os-git-backup,os-sunnyvalley</plugins>
+      <plugins>os-etpro-telemetry,os-frr,os-git-backup,os-sensei-updater,os-sunnyvalley</plugins>
       <type/>
       <subscription/>
       <reboot>0</reboot>
@@ -2245,9 +2245,9 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
     </quagga>
   </OPNsense>
   <revision>
-    <username>root@192.168.222.1</username>
-    <description>/api/trust/cert/del/0ccf72ac-1f86-46fc-bf03-5cc8d9e738de made changes</description>
-    <time>1791552766.51</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
+    <time>1791553009.63</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
