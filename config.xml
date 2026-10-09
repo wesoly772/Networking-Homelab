@@ -1378,7 +1378,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791549185.64" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791549190.51" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules/>
@@ -2175,8 +2175,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/toggle_ruleset/emerging-file_sharing.rules/1 made changes</description>
-    <time>1791549185.64</time>
+    <description>/api/ids/settings/set_rulesetproperties made changes</description>
+    <time>1791549190.51</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
