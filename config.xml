@@ -2243,7 +2243,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553023.06" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553023.49" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2268,16 +2268,16 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <globalCtiPort>2096</globalCtiPort>
       </cti>
       <general>
-        <installTimestamp/>
-        <heartbeatTimer>49 * * * *</heartbeatTimer>
+        <installTimestamp>1791553023</installTimestamp>
+        <heartbeatTimer>17 1,9,18 * * *</heartbeatTimer>
         <coreFileEnable>false</coreFileEnable>
         <showWanIface>false</showWanIface>
         <flavor>100</flavor>
         <healthCheck>true</healthCheck>
         <healthShare>true</healthShare>
-        <healthTimer>*/5</healthTimer>
-        <updateTimer>* 0 * * *</updateTimer>
-        <licenseCheckTimer>0 19,23,4,9,14 * * *</licenseCheckTimer>
+        <healthTimer>5,15,25,35,45,55 * * * *</healthTimer>
+        <updateTimer>10 * * * *</updateTimer>
+        <licenseCheckTimer>46 4,8,17,20,23 * * *</licenseCheckTimer>
         <heartbeatMonit>true</heartbeatMonit>
         <heartbeatData>true</heartbeatData>
         <hwbypass>false</hwbypass>
@@ -2481,7 +2481,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   <revision>
     <username>(root)</username>
     <description>/usr/local/opnsense/mvc/app/library/OPNsense/Zenarmor/CLI.php made changes</description>
-    <time>1791553023.06</time>
+    <time>1791553023.49</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
