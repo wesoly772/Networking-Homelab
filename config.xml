@@ -2246,7 +2246,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <proxy version="1.0.9" persisted_at="1791567388.84" description="Squid web proxy settings">
+    <proxy version="1.0.9" persisted_at="1791567443.84" description="Squid web proxy settings">
       <general>
         <enabled>1</enabled>
         <error_pages>opnsense</error_pages>
@@ -2342,7 +2342,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
                 <url>http://dsi.ut-capitole.fr/blacklists/download/blacklists_for_pfsense.tar.gz</url>
                 <username/>
                 <password/>
-                <filter/>
+                <filter>adult,agressif,ai,arjel,associations_religieuses,astrology,audio-video,bank,bitcoin,blog,celebrity,chat,child,cleaning,cooking,cryptojacking,dangerous_material,dating,ddos,dialer,doh,download,drogue,dynamic-dns,educational_games,examen_pix,exceptions_liste_bu,fakenews,filehosting,financial,forums,gambling,games,hacking,jobsearch,lingerie,liste_blanche,liste_bu,malware,manga,marketingware,mixed_adult,mobile-phone,phishing,press,publicite,radio,reaffected,redirector,remote-control,residential-proxies,sect,sexual_education,shopping,shortener,social_networks,special,sports,stalkerware,strict_redirector,strong_redirector,translation,tricheur,tricheur_pix,update,vpn,warez,webhosting,webmail</filter>
                 <sslNoVerify>0</sslNoVerify>
                 <description>ut1 web filter</description>
               </blacklist>
@@ -2379,8 +2379,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/proxy/settings/add_remote_blacklist/ made changes</description>
-    <time>1791567388.84</time>
+    <description>/api/proxy/settings/set_remote_blacklist/73e1e75b-da08-42b0-a4b5-78addeb537fa made changes</description>
+    <time>1791567443.84</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
