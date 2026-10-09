@@ -311,7 +311,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </ntpd>
   <OPNsense>
     <Firewall>
-      <Filter version="1.0.6" persisted_at="1791568857.02" description="Firewall rules (new)">
+      <Filter version="1.0.6" persisted_at="1791569064.94" description="Firewall rules (new)">
         <general/>
         <rules>
           <rule uuid="4326a65c-6336-48b3-a00d-7dec20413f8b">
@@ -1128,7 +1128,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <source_port/>
             <destination_net>lo0</destination_net>
             <destination_not>0</destination_not>
-            <destination_port>3128</destination_port>
+            <destination_port>3128-3129</destination_port>
             <divert-to/>
             <gateway/>
             <replyto/>
@@ -1166,7 +1166,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <shaper1/>
             <shaper2/>
             <description/>
-            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1NjYyNDEuMzkiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1Njg0NDIuNzMiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
+            <audit>eyJjcmVhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1NjYyNDEuMzkiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1cGRhdGVkIjp7InVzZXJuYW1lIjoicm9vdEAxOTIuMTY4LjIyMi4xIiwidGltZSI6IjE3OTE1NjkwNjQuOTQiLCJkZXNjcmlwdGlvbiI6IlwvYXBpXC9hcGkucGhwIG1hZGUgY2hhbmdlcyJ9LCJ1c2VyZGF0YSI6eyJub3RlIjoiIn19</audit>
           </rule>
           <rule uuid="fcddb5e7-986b-4566-b3b9-67c50149cb0d">
             <enabled>1</enabled>
@@ -2501,8 +2501,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/d_nat/set_rule/75f8f33b-5201-4dc9-b519-02d47446fbdd made changes</description>
-    <time>1791569008.08</time>
+    <description>/api/firewall/filter/set_rule/95326611-bab8-452c-8ba0-05d9dd540106 made changes</description>
+    <time>1791569064.94</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
