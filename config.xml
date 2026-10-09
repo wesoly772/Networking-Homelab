@@ -1378,11 +1378,20 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791548733.31" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791548811.90" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules>
         <rule uuid="baaf3663-457a-4760-b92e-cd2d7c359cf2">
+          <enabled>1</enabled>
+          <source>10.10.30.10</source>
+          <destination>192.168.222.174</destination>
+          <fingerprint/>
+          <description>TEST-ICMP-RULE</description>
+          <action>alert</action>
+          <bypass>0</bypass>
+        </rule>
+        <rule uuid="0b0674df-4209-4241-88cc-a6268017c659">
           <enabled>1</enabled>
           <source>10.10.30.10</source>
           <destination>192.168.222.174</destination>
@@ -2181,8 +2190,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/set_user_rule/baaf3663-457a-4760-b92e-cd2d7c359cf2 made changes</description>
-    <time>1791548733.31</time>
+    <description>/api/ids/settings/add_user_rule/ made changes</description>
+    <time>1791548811.90</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
