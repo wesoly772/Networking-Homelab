@@ -2307,7 +2307,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <proxy version="1.0.9" persisted_at="1791568135.34" description="Squid web proxy settings">
+    <proxy version="1.0.9" persisted_at="1791568140.44" description="Squid web proxy settings">
       <general>
         <enabled>1</enabled>
         <error_pages>opnsense</error_pages>
@@ -2441,7 +2441,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   <revision>
     <username>root@192.168.222.1</username>
     <description>/api/proxy/settings/set made changes</description>
-    <time>1791568135.34</time>
+    <time>1791568140.44</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
