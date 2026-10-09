@@ -1378,7 +1378,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791550648.34" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791550750.94" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules>
@@ -1450,7 +1450,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <divert_listeners>1</divert_listeners>
         <promisc>1</promisc>
         <interfaces>opt3,opt1,opt2</interfaces>
-        <homenet>10.0.0.0/8</homenet>
+        <homenet>10.0.0.0/8,10.10.10.0/24</homenet>
         <defaultPacketSize/>
         <UpdateCron>e03165e3-c404-4fcd-9872-e852e45045e8</UpdateCron>
         <AlertLogrotate>W0D23</AlertLogrotate>
@@ -2185,8 +2185,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/set_user_rule/46bbbfaf-6684-4e7c-b25c-a84335731039 made changes</description>
-    <time>1791550648.34</time>
+    <description>/api/ids/settings/set made changes</description>
+    <time>1791550750.94</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
