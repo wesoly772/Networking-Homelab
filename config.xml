@@ -200,6 +200,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       <spoofmac/>
       <ipaddr>10.10.0.1</ipaddr>
       <subnet>30</subnet>
+      <mtu>1500</mtu>
     </opt1>
     <opt2>
       <if>vtnet2</if>
@@ -209,6 +210,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       <spoofmac/>
       <ipaddr>10.10.1.1</ipaddr>
       <subnet>30</subnet>
+      <mtu>1500</mtu>
     </opt2>
     <opt3>
       <if>vtnet11</if>
@@ -218,6 +220,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       <spoofmac/>
       <ipaddr>10.10.10.254</ipaddr>
       <subnet>24</subnet>
+      <mtu>1500</mtu>
     </opt3>
   </interfaces>
   <dnsmasq version="1.0.9" persisted_at="1790363419.89" description="Dnsmasq DNS and DHCP">
@@ -2256,7 +2259,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553479.04" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553803.44" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2493,8 +2496,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/zenarmor/installer/complete made changes</description>
-    <time>1791553479.04</time>
+    <description>/api/zenarmor/configuration/deployment?deploymentMode=null&amp;showWan=false made changes</description>
+    <time>1791553803.44</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
