@@ -2185,11 +2185,130 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
+    <proxy version="1.0.9" persisted_at="1791564511.46" description="Squid web proxy settings">
+      <general>
+        <enabled>0</enabled>
+        <error_pages/>
+        <icpPort/>
+        <logging>
+          <enable>
+            <accessLog>1</accessLog>
+            <storeLog>1</storeLog>
+          </enable>
+          <ignoreLogACL/>
+          <target/>
+        </logging>
+        <alternateDNSservers/>
+        <forwardedForHandling/>
+        <uriWhitespaceHandling/>
+        <enablePinger>1</enablePinger>
+        <useViaHeader>0</useViaHeader>
+        <suppressVersion>0</suppressVersion>
+        <connecttimeout/>
+        <VisibleEmail/>
+        <VisibleHostname/>
+        <cache>
+          <local>
+            <enabled>0</enabled>
+            <directory>/var/squid/cache</directory>
+            <cache_mem>256</cache_mem>
+            <maximum_object_size/>
+            <maximum_object_size_in_memory/>
+            <memory_cache_mode/>
+            <size>100</size>
+            <swap_timeout/>
+            <max_swap_rate/>
+            <slot_size/>
+            <cache_linux_packages>0</cache_linux_packages>
+            <cache_windows_updates>0</cache_windows_updates>
+          </local>
+        </cache>
+        <traffic>
+          <enabled>0</enabled>
+          <maxDownloadSize/>
+          <maxUploadSize/>
+          <OverallBandwidthTrotteling/>
+          <perHostTrotteling/>
+        </traffic>
+        <parentproxy>
+          <enabled>0</enabled>
+          <host/>
+          <enableauth>0</enableauth>
+          <user>username</user>
+          <password>password</password>
+          <port/>
+          <localdomains/>
+          <localips/>
+        </parentproxy>
+      </general>
+      <forward>
+        <interfaces/>
+        <port>3128</port>
+        <sslbumpport>3129</sslbumpport>
+        <sslbump>0</sslbump>
+        <sslurlonly>0</sslurlonly>
+        <sslcertificate/>
+        <sslnobumpsites/>
+        <workers/>
+        <ssl_crtd_storage_max_size>4</ssl_crtd_storage_max_size>
+        <sslcrtd_children>5</sslcrtd_children>
+        <snmp_enable>0</snmp_enable>
+        <snmp_port>3401</snmp_port>
+        <snmp_password>public</snmp_password>
+        <ftpInterfaces/>
+        <ftpPort>2121</ftpPort>
+        <ftpTransparentMode>0</ftpTransparentMode>
+        <addACLforInterfaceSubnets>1</addACLforInterfaceSubnets>
+        <transparentMode>0</transparentMode>
+        <acl>
+          <allowedSubnets/>
+          <unrestricted/>
+          <bannedHosts/>
+          <allowWhitelistBannedHosts>1</allowWhitelistBannedHosts>
+          <whiteList/>
+          <blackList/>
+          <browser/>
+          <mimeType/>
+          <googleapps/>
+          <youtube/>
+          <safePorts>80:http,21:ftp,443:https,70:gopher,210:wais,1025-65535:unregistered ports,280:http-mgmt,488:gss-http,591:filemaker,777:multiling http</safePorts>
+          <sslPorts>443:https</sslPorts>
+          <remoteACLs>
+            <blacklists/>
+            <UpdateCron/>
+          </remoteACLs>
+        </acl>
+        <icap>
+          <enable>0</enable>
+          <RequestURL/>
+          <ResponseURL/>
+          <SendClientIP>1</SendClientIP>
+          <SendUsername>0</SendUsername>
+          <EncodeUsername>0</EncodeUsername>
+          <UsernameHeader>X-Username</UsernameHeader>
+          <EnablePreview>1</EnablePreview>
+          <PreviewSize>1024</PreviewSize>
+          <OptionsTTL>60</OptionsTTL>
+          <exclude/>
+        </icap>
+        <authentication>
+          <method/>
+          <authEnforceGroup/>
+          <realm/>
+          <credentialsttl/>
+          <children/>
+        </authentication>
+      </forward>
+      <pac/>
+      <error_pages>
+        <template/>
+      </error_pages>
+    </proxy>
   </OPNsense>
   <revision>
     <username>(root)</username>
-    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
-    <time>1791564461.89</time>
+    <description>/usr/local/opnsense/mvc/script/run_migrations.php made changes</description>
+    <time>1791564511.46</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
