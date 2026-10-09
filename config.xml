@@ -1378,14 +1378,14 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <interface/>
       </general>
     </Hostwatch>
-    <IDS version="1.1.2" persisted_at="1791550750.94" description="Intrusion detection">
+    <IDS version="1.1.2" persisted_at="1791551229.53" description="Intrusion detection">
       <rules/>
       <policies/>
       <userDefinedRules>
         <rule uuid="46bbbfaf-6684-4e7c-b25c-a84335731039">
           <enabled>1</enabled>
-          <source>any</source>
-          <destination>192.168.222.174</destination>
+          <source>10.10.30.10</source>
+          <destination>10.10.10.2</destination>
           <fingerprint/>
           <description>TEST-HTTP-RULE</description>
           <action>alert</action>
@@ -2185,8 +2185,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/ids/settings/set made changes</description>
-    <time>1791550750.94</time>
+    <description>/api/ids/settings/set_user_rule/46bbbfaf-6684-4e7c-b25c-a84335731039 made changes</description>
+    <time>1791551229.53</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
