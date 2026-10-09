@@ -1336,7 +1336,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       <zones/>
       <templates/>
     </captiveportal>
-    <cron version="1.0.4" persisted_at="1791553032.08" description="Cron settings">
+    <cron version="1.0.4" persisted_at="1791564449.79" description="Cron settings">
       <jobs>
         <job uuid="e03165e3-c404-4fcd-9872-e852e45045e8">
           <origin>IDS</origin>
@@ -1350,19 +1350,6 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <command>ids update</command>
           <parameters/>
           <description>ids rule updates</description>
-        </job>
-        <job uuid="fb46c596-d0da-4b54-b83e-388c52ebe025">
-          <origin>Zenarmor</origin>
-          <enabled>1</enabled>
-          <minutes>*</minutes>
-          <hours>*</hours>
-          <days>*</days>
-          <months>*</months>
-          <weekdays>*</weekdays>
-          <who>root</who>
-          <command>zenarmor periodicals</command>
-          <parameters/>
-          <description>Zenarmor periodicals</description>
         </job>
       </jobs>
     </cron>
@@ -2198,245 +2185,11 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791564290.31" description="OPNsense Zenarmor Application">
-      <zenvpn>
-        <enabled>1</enabled>
-      </zenvpn>
-      <logger>
-        <severityLevel>INFO</severityLevel>
-        <rotation>1d</rotation>
-        <retire>3</retire>
-      </logger>
-      <sso>
-        <enabled>false</enabled>
-        <exemptDeviceCategories/>
-        <exemptIfaceTags/>
-        <exemptVlanIds/>
-        <exemptInternalTraffic>false</exemptInternalTraffic>
-        <redirectBaseUrl/>
-        <sessionExpireTimeout>86400</sessionExpireTimeout>
-        <sessionInactivityTimeout>28800</sessionInactivityTimeout>
-      </sso>
-      <cti>
-        <enabled>true</enabled>
-        <globalCtiHost>tier2-cti.zenarmor.net</globalCtiHost>
-        <globalCtiPort>2096</globalCtiPort>
-      </cti>
-      <general>
-        <installTimestamp>1791553023</installTimestamp>
-        <heartbeatTimer>17 1,9,18 * * *</heartbeatTimer>
-        <coreFileEnable>false</coreFileEnable>
-        <showWanIface>false</showWanIface>
-        <flavor>25</flavor>
-        <healthCheck>true</healthCheck>
-        <healthShare>true</healthShare>
-        <healthTimer>5,15,25,35,45,55 * * * *</healthTimer>
-        <updateTimer>10 * * * *</updateTimer>
-        <licenseCheckTimer>46 4,8,17,20,23 * * *</licenseCheckTimer>
-        <heartbeatMonit>true</heartbeatMonit>
-        <heartbeatData>true</heartbeatData>
-        <hwbypass>false</hwbypass>
-        <SenseiTempSize>50</SenseiTempSize>
-        <CloudManagementEnable>true</CloudManagementEnable>
-        <CloudManagementAdmin/>
-        <CloudManagementUUID/>
-        <license>
-          <plan/>
-          <key/>
-          <startDate/>
-          <endDate/>
-          <Size>0</Size>
-        </license>
-        <support>
-          <key/>
-          <plan/>
-          <startDate/>
-          <endDate/>
-        </support>
-        <clientemail>szkolaidiota@gmail.com</clientemail>
-        <customerid>0000000000</customerid>
-        <sendcategory>true</sendcategory>
-        <bigquery>
-          <ProjectID/>
-          <CredentialFile/>
-          <Dataset/>
-          <MongoStreamEnabled>false</MongoStreamEnabled>
-          <MongoStreamURI/>
-        </bigquery>
-        <database>
-          <Type>SQ</Type>
-          <Host/>
-          <Port/>
-          <User/>
-          <Pass>b64:</Pass>
-          <Version>sqlite3</Version>
-          <FullVersion/>
-          <Remote>false</Remote>
-          <Prefix>zenarmor_0000000000_cf09004d-9ba7-4ea5-9876-9fb45068f39d_</Prefix>
-          <ClusterUUID/>
-          <retireAfter>2</retireAfter>
-          <dbpath>/usr/local/datastore/sqlite</dbpath>
-        </database>
-        <swapRate>60</swapRate>
-        <swapRateEnabled>true</swapRateEnabled>
-        <maxmemoryusage>3072</maxmemoryusage>
-        <backupPath>/usr/local/datastore/backup</backupPath>
-        <traceFSSize>100M</traceFSSize>
-      </general>
-      <shun>
-        <networks/>
-        <vlans/>
-        <macs/>
-      </shun>
-      <bypass>
-        <enable>false</enable>
-        <mode>false</mode>
-      </bypass>
-      <haconfig>
-        <enable>false</enable>
-        <configUpdateTime/>
-        <policyUpdateTime/>
-      </haconfig>
-      <netflow>
-        <enabled>false</enabled>
-        <version>9</version>
-        <collectorip>127.0.0.1</collectorip>
-        <collectorport>9996</collectorport>
-      </netflow>
-      <updater>
-        <enabled>true</enabled>
-        <autocheck>true</autocheck>
-        <lastupdate/>
-      </updater>
-      <anonymize>
-        <localAddress>false</localAddress>
-        <remoteAddress>false</remoteAddress>
-      </anonymize>
-      <onboot>
-        <eastpect>YES</eastpect>
-        <elasticsearch>NO</elasticsearch>
-        <mongod>NO</mongod>
-        <senpai>YES</senpai>
-      </onboot>
-      <reports>
-        <refresh>60000</refresh>
-        <interval>3600000</interval>
-        <custominterval>
-          <start/>
-          <end/>
-        </custominterval>
-        <sum>volume</sum>
-        <size>10</size>
-        <showhostname>false</showhostname>
-        <showBlock>false</showBlock>
-        <showLocal>false</showLocal>
-        <generate>
-          <enabled>false</enabled>
-          <sum/>
-          <timer/>
-          <pdf>false</pdf>
-          <mail>
-            <server>127.0.0.1</server>
-            <port>25</port>
-            <secured>NO</secured>
-            <username/>
-            <password/>
-            <from/>
-            <to/>
-            <nosslverify>false</nosslverify>
-            <provider>smtp-server</provider>
-            <recipients/>
-          </mail>
-        </generate>
-      </reports>
-      <agentrestapi>
-        <enabled>false</enabled>
-      </agentrestapi>
-      <dnsEncrihmentConfig>
-        <servers/>
-        <reverse>false</reverse>
-        <aliases>true</aliases>
-      </dnsEncrihmentConfig>
-      <communityid>
-        <enabled>true</enabled>
-        <seed>0</seed>
-      </communityid>
-      <bigquery>
-        <enabled>false</enabled>
-      </bigquery>
-      <streamer>
-        <enabled>false</enabled>
-        <indexes/>
-        <modes>bigquery</modes>
-      </streamer>
-      <centralReporting>
-        <enabled>true</enabled>
-        <method>bigquery</method>
-      </centralReporting>
-      <ingest>
-        <ipdrEnabled>false</ipdrEnabled>
-        <siemEnabled>false</siemEnabled>
-        <ipdrIndexes/>
-        <auditLogEnabled>false</auditLogEnabled>
-        <deviceEnabled>false</deviceEnabled>
-        <notificationEnabled>false</notificationEnabled>
-        <baseUrl>https://ingest-flow.devel.zenarmor.net/event</baseUrl>
-      </ingest>
-      <intrusiondetection>
-        <enabled>true</enabled>
-      </intrusiondetection>
-      <streamReportConfig>
-        <enabled>false</enabled>
-        <server>127.0.0.1</server>
-        <port>514</port>
-        <protocol>UDP</protocol>
-        <indexes/>
-      </streamReportConfig>
-      <streamReportDataExternal>
-        <enabled>false</enabled>
-        <uri/>
-        <server/>
-        <port>9200</port>
-        <esVersion/>
-        <User/>
-        <Pass>b64:</Pass>
-        <ClusterUUID/>
-      </streamReportDataExternal>
-      <dns>
-        <localDomain>intra.example.com</localDomain>
-      </dns>
-      <tls>
-        <enabled>false</enabled>
-        <certname/>
-        <passtopsites>false</passtopsites>
-      </tls>
-      <zenconsole>
-        <centralManagement>true</centralManagement>
-        <reportInfastructureError>true</reportInfastructureError>
-      </zenconsole>
-      <enrich>
-        <tcpServiceEnable>true</tcpServiceEnable>
-        <tcpServiceIP>127.0.0.1</tcpServiceIP>
-        <cloudWebcatEnrich>true</cloudWebcatEnrich>
-        <cloudResponseTimeout>0</cloudResponseTimeout>
-        <dns>true</dns>
-        <user>true</user>
-        <routerIdentification>true</routerIdentification>
-      </enrich>
-      <installation>
-        <whereDidYouHear>Referral - Youtuber/Influencer</whereDidYouHear>
-        <whereDidYouHearOther/>
-      </installation>
-      <rules>
-        <decision_is_block>no</decision_is_block>
-        <webcategoriesType/>
-      </rules>
-    </Zenarmor>
   </OPNsense>
   <revision>
-    <username>root@192.168.222.1</username>
-    <description>/api/zenarmor/configuration/deployment?deploymentMode=null&amp;showWan=false made changes</description>
-    <time>1791564290.31</time>
+    <username>(root)</username>
+    <description>/usr/local/opnsense/mvc/app/library/OPNsense/Zenarmor/CLI.php made changes</description>
+    <time>1791564449.79</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
@@ -2452,26 +2205,10 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
     <syncitems/>
   </hasync>
   <sysctl version="1.0.2" persisted_at="1790095152.14" description="System Tunables">
-    <item uuid="0cef08cd-e7ec-437a-b14f-565c72f20b11">
-      <tunable>dev.netmap.if_num</tunable>
-      <value>512</value>
-      <descr>Automatically added by Zenarmor</descr>
-    </item>
-    <item uuid="a5ed9a4d-46af-43ea-9f57-483f2df597d3">
-      <tunable>dev.netmap.ring_size</tunable>
-      <value>131072</value>
-      <descr>Automatically added by Zenarmor</descr>
-    </item>
-    <item uuid="1f2865d5-9f05-43aa-b406-8c424480eb1c">
-      <tunable>dev.netmap.ring_num</tunable>
-      <value>1024</value>
-      <descr>Automatically added by Zenarmor</descr>
-    </item>
-    <item uuid="a1239e83-be30-43b2-bb67-bb4b9604ab22">
-      <tunable>dev.netmap.buf_num</tunable>
-      <value>163840</value>
-      <descr>Automatically added by Zenarmor</descr>
-    </item>
+    
+    
+    
+    
   </sysctl>
   <ifgroups version="1.0.0" persisted_at="1790095152.66" description="Firewall interface groups"/>
   <bridges version="1.0.0" persisted_at="1790095152.83" description="Bridge devices"/>
