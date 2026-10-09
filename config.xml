@@ -2243,7 +2243,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <Zenarmor version="0.0.0" persisted_at="1791553023.93" description="OPNsense Zenarmor Application">
+    <Zenarmor version="0.0.0" persisted_at="1791553025.85" description="OPNsense Zenarmor Application">
       <zenvpn>
         <enabled>1</enabled>
       </zenvpn>
@@ -2481,7 +2481,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   <revision>
     <username>(root)</username>
     <description>/usr/local/opnsense/mvc/app/library/OPNsense/Zenarmor/CLI.php made changes</description>
-    <time>1791553023.93</time>
+    <time>1791553025.85</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
@@ -2496,7 +2496,28 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
     <password/>
     <syncitems/>
   </hasync>
-  <sysctl version="1.0.2" persisted_at="1790095152.14" description="System Tunables"/>
+  <sysctl version="1.0.2" persisted_at="1790095152.14" description="System Tunables">
+    <item uuid="0cef08cd-e7ec-437a-b14f-565c72f20b11">
+      <tunable>dev.netmap.if_num</tunable>
+      <value>512</value>
+      <descr>Automatically added by Zenarmor</descr>
+    </item>
+    <item uuid="a5ed9a4d-46af-43ea-9f57-483f2df597d3">
+      <tunable>dev.netmap.ring_size</tunable>
+      <value>131072</value>
+      <descr>Automatically added by Zenarmor</descr>
+    </item>
+    <item uuid="1f2865d5-9f05-43aa-b406-8c424480eb1c">
+      <tunable>dev.netmap.ring_num</tunable>
+      <value>1024</value>
+      <descr>Automatically added by Zenarmor</descr>
+    </item>
+    <item uuid="a1239e83-be30-43b2-bb67-bb4b9604ab22">
+      <tunable>dev.netmap.buf_num</tunable>
+      <value>163840</value>
+      <descr>Automatically added by Zenarmor</descr>
+    </item>
+  </sysctl>
   <ifgroups version="1.0.0" persisted_at="1790095152.66" description="Firewall interface groups"/>
   <bridges version="1.0.0" persisted_at="1790095152.83" description="Bridge devices"/>
   <gifs version="1.0.0" persisted_at="1790095152.84" description="GIF devices"/>
