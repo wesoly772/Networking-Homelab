@@ -2246,7 +2246,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <proxy version="1.0.9" persisted_at="1791565917.98" description="Squid web proxy settings">
+    <proxy version="1.0.9" persisted_at="1791567388.84" description="Squid web proxy settings">
       <general>
         <enabled>1</enabled>
         <error_pages>opnsense</error_pages>
@@ -2335,7 +2335,18 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <safePorts>80:http,21:ftp,443:https,70:gopher,210:wais,1025-65535:unregistered ports,280:http-mgmt,488:gss-http,591:filemaker,777:multiling http</safePorts>
           <sslPorts>443:https</sslPorts>
           <remoteACLs>
-            <blacklists/>
+            <blacklists>
+              <blacklist uuid="73e1e75b-da08-42b0-a4b5-78addeb537fa">
+                <enabled>1</enabled>
+                <filename>UT1</filename>
+                <url>http://dsi.ut-capitole.fr/blacklists/download/blacklists_for_pfsense.tar.gz</url>
+                <username/>
+                <password/>
+                <filter/>
+                <sslNoVerify>0</sslNoVerify>
+                <description>ut1 web filter</description>
+              </blacklist>
+            </blacklists>
             <UpdateCron/>
           </remoteACLs>
         </acl>
@@ -2368,8 +2379,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/set_rule/5f1fdfb5-3eda-48cb-a610-0f547fb0f12e made changes</description>
-    <time>1791567045.14</time>
+    <description>/api/proxy/settings/add_remote_blacklist/ made changes</description>
+    <time>1791567388.84</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
