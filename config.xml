@@ -2368,7 +2368,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         </routes>
       </static>
     </quagga>
-    <proxy version="1.0.9" persisted_at="1791568284.12" description="Squid web proxy settings">
+    <proxy version="1.0.9" persisted_at="1791568939.74" description="Squid web proxy settings">
       <general>
         <enabled>1</enabled>
         <error_pages>opnsense</error_pages>
@@ -2445,7 +2445,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
         <transparentMode>1</transparentMode>
         <acl>
           <allowedSubnets/>
-          <unrestricted/>
+          <unrestricted>10.10.30.10</unrestricted>
           <bannedHosts/>
           <allowWhitelistBannedHosts>1</allowWhitelistBannedHosts>
           <whiteList/>
@@ -2501,8 +2501,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/set_rule/0de7de0b-a8b8-47b3-a959-7b34e8d09420 made changes</description>
-    <time>1791568857.02</time>
+    <description>/api/proxy/settings/set made changes</description>
+    <time>1791568939.74</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
