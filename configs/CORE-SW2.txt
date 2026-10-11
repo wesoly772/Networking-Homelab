@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 7312 bytes
+Current configuration : 7731 bytes
 !
-! Last configuration change at 13:18:20 UTC Tue Oct 6 2026
+! Last configuration change at 13:42:00 UTC Sun Oct 11 2026
 !
 version 15.2
 service timestamps debug datetime msec
@@ -25,12 +25,10 @@ no aaa new-model
 !
 !
 !
-ip arp inspection vlan 20,30,40
 !
 !
 !
 ip dhcp snooping vlan 20,30,40
-ip dhcp snooping
 no ip domain-lookup
 ip domain-name lab.local
 ip cef
@@ -66,6 +64,13 @@ interface Port-channel1
  ip dhcp snooping trust
 !
 interface Port-channel2
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
+!
+interface Port-channel3
  switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
@@ -109,13 +114,14 @@ interface GigabitEthernet0/3
  ip dhcp snooping trust
 !
 interface GigabitEthernet1/0
+ switchport access vlan 500
  switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
- switchport mode trunk
+ switchport mode access
  ip arp inspection trust
+ shutdown
  negotiation auto
- channel-group 1 mode active
  ip dhcp snooping trust
 !
 interface GigabitEthernet1/1
@@ -137,16 +143,22 @@ interface GigabitEthernet1/3
  negotiation auto
 !
 interface GigabitEthernet2/0
- switchport access vlan 500
- switchport mode access
- shutdown
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
  negotiation auto
+ channel-group 3 mode active
 !
 interface GigabitEthernet2/1
- switchport access vlan 500
- switchport mode access
- shutdown
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
  negotiation auto
+ channel-group 3 mode active
 !
 interface GigabitEthernet2/2
  switchport access vlan 500
@@ -179,7 +191,7 @@ interface GigabitEthernet3/2
  switchport mode trunk
  ip arp inspection trust
  negotiation auto
- channel-group 2 mode on
+ channel-group 2 mode active
 !
 interface GigabitEthernet3/3
  switchport trunk allowed vlan 20,30,40,99
@@ -188,7 +200,7 @@ interface GigabitEthernet3/3
  switchport mode trunk
  ip arp inspection trust
  negotiation auto
- channel-group 2 mode on
+ channel-group 2 mode active
 !
 interface Vlan20
  ip address 10.10.20.2 255.255.255.0

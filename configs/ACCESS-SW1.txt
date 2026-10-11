@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 6392 bytes
+Current configuration : 6826 bytes
 !
-! Last configuration change at 13:03:47 UTC Tue Oct 6 2026
+! Last configuration change at 13:37:15 UTC Sun Oct 11 2026
 !
 version 15.2
 service timestamps debug datetime msec
@@ -27,7 +27,6 @@ no aaa new-model
 !
 vtp mode transparent
 no ip routing
-ip arp inspection vlan 20,30,40
 !
 !
 !
@@ -59,6 +58,9 @@ vlan 99
 vlan 500
  name Unused
 !
+vlan 999
+ name Native
+!
 ! 
 !
 !
@@ -73,7 +75,7 @@ vlan 500
 !
 !
 interface Port-channel1
- switchport trunk allowed vlan 10,20,30,40,99
+ switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
  switchport mode trunk
@@ -81,15 +83,22 @@ interface Port-channel1
  ip dhcp snooping trust
 !
 interface Port-channel2
- switchport trunk allowed vlan 10,20,30,40,99
+ switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
  switchport mode trunk
  ip arp inspection trust
  ip dhcp snooping trust
 !
+interface Port-channel3
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
+!
 interface GigabitEthernet0/0
- switchport trunk allowed vlan 10,20,30,40,99
+ switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
  switchport mode trunk
@@ -99,7 +108,7 @@ interface GigabitEthernet0/0
  ip dhcp snooping trust
 !
 interface GigabitEthernet0/1
- switchport trunk allowed vlan 10,20,30,40,99
+ switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
  switchport mode trunk
@@ -109,13 +118,14 @@ interface GigabitEthernet0/1
  ip dhcp snooping trust
 !
 interface GigabitEthernet0/2
+ switchport access vlan 500
  switchport trunk allowed vlan 10,20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
- switchport mode trunk
+ switchport mode access
  ip arp inspection trust
+ shutdown
  negotiation auto
- channel-group 1 mode active
  ip dhcp snooping trust
 !
 interface GigabitEthernet0/3
@@ -154,16 +164,22 @@ interface GigabitEthernet1/3
  negotiation auto
 !
 interface GigabitEthernet2/0
- switchport access vlan 500
- switchport mode access
- shutdown
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
  negotiation auto
+ channel-group 3 mode active
 !
 interface GigabitEthernet2/1
- switchport access vlan 500
- switchport mode access
- shutdown
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
  negotiation auto
+ channel-group 3 mode active
 !
 interface GigabitEthernet2/2
  switchport access vlan 500
@@ -190,7 +206,7 @@ interface GigabitEthernet3/1
  negotiation auto
 !
 interface GigabitEthernet3/2
- switchport trunk allowed vlan 10,20,30,40,99
+ switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
  switchport mode trunk
@@ -200,7 +216,7 @@ interface GigabitEthernet3/2
  ip dhcp snooping trust
 !
 interface GigabitEthernet3/3
- switchport trunk allowed vlan 10,20,30,40,99
+ switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
  switchport mode trunk

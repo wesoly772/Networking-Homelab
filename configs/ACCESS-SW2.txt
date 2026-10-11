@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 6314 bytes
+Current configuration : 6766 bytes
 !
-! Last configuration change at 13:18:15 UTC Tue Oct 6 2026
+! Last configuration change at 12:45:42 UTC Sun Oct 11 2026
 !
 version 15.2
 service timestamps debug datetime msec
@@ -27,7 +27,6 @@ no aaa new-model
 !
 vtp mode transparent
 no ip routing
-ip arp inspection vlan 20,30,40
 !
 !
 !
@@ -58,6 +57,9 @@ vlan 99
 vlan 500
  name Unused
 !
+vlan 999
+ name Native
+!
 ! 
 !
 !
@@ -87,6 +89,13 @@ interface Port-channel2
  ip arp inspection trust
  ip dhcp snooping trust
 !
+interface Port-channel3
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
+!
 interface GigabitEthernet0/0
  switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
@@ -108,13 +117,14 @@ interface GigabitEthernet0/1
  ip dhcp snooping trust
 !
 interface GigabitEthernet0/2
+ switchport access vlan 500
  switchport trunk allowed vlan 20,30,40,99
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 999
- switchport mode trunk
+ switchport mode access
  ip arp inspection trust
+ shutdown
  negotiation auto
- channel-group 1 mode active
  ip dhcp snooping trust
 !
 interface GigabitEthernet0/3
@@ -152,16 +162,22 @@ interface GigabitEthernet1/3
  negotiation auto
 !
 interface GigabitEthernet2/0
- switchport access vlan 500
- switchport mode access
- shutdown
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
  negotiation auto
+ channel-group 3 mode active
 !
 interface GigabitEthernet2/1
- switchport access vlan 500
- switchport mode access
- shutdown
+ switchport trunk allowed vlan 20,30,40,99
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ ip arp inspection trust
  negotiation auto
+ channel-group 3 mode active
 !
 interface GigabitEthernet2/2
  switchport access vlan 500
