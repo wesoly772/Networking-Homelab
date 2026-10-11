@@ -1728,7 +1728,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <server_port>53001</server_port>
         </general>
       </ddns>
-      <dhcp4 version="1.0.7" persisted_at="1791725040.92" description="Kea DHCPv4 configuration">
+      <dhcp4 version="1.0.7" persisted_at="1791725717.87" description="Kea DHCPv4 configuration">
         <general>
           <enabled>1</enabled>
           <manual_config>0</manual_config>
@@ -1764,7 +1764,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <option_data>
               <domain_name_servers>8.8.8.8</domain_name_servers>
               <domain_search/>
-              <routers>10.10.30.1</routers>
+              <routers>10.10.30.3</routers>
               <static_routes/>
               <classless_static_route/>
               <domain_name/>
@@ -2485,8 +2485,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/system_advanced_firewall.php made changes</description>
-    <time>1791725396.60</time>
+    <description>/api/kea/dhcpv4/set_subnet/47103714-cc4e-4c63-b6be-539879e4817a made changes</description>
+    <time>1791725717.87</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
