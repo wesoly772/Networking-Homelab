@@ -1722,7 +1722,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <server_port>53001</server_port>
         </general>
       </ddns>
-      <dhcp4 version="1.0.7" persisted_at="1791062872.56" description="Kea DHCPv4 configuration">
+      <dhcp4 version="1.0.7" persisted_at="1791724969.13" description="Kea DHCPv4 configuration">
         <general>
           <enabled>1</enabled>
           <manual_config>0</manual_config>
@@ -1787,6 +1787,45 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
             <ddns_update_on_renew>0</ddns_update_on_renew>
             <ddns_conflict_resolution_mode/>
             <description>VLAN30</description>
+          </subnet4>
+          <subnet4 uuid="4ee7df97-f6d0-459e-9fb7-14d27d39e9e1">
+            <subnet_id>2</subnet_id>
+            <subnet>10.10.40.0/24</subnet>
+            <valid_lifetime/>
+            <next_server/>
+            <option_data_autocollect>0</option_data_autocollect>
+            <option_data>
+              <domain_name_servers>8.8.8.8</domain_name_servers>
+              <domain_search/>
+              <routers>10.10.40.1</routers>
+              <static_routes/>
+              <classless_static_route/>
+              <domain_name/>
+              <ntp_servers/>
+              <time_servers/>
+              <tftp_server_name/>
+              <boot_file_name/>
+              <v6_only_preferred/>
+              <v4_dnr/>
+            </option_data>
+            <option/>
+            <match-client-id>1</match-client-id>
+            <allocator/>
+            <pools>10.10.40.10-10.10.40.20</pools>
+            <ping_check>1</ping_check>
+            <ddns_forward_zone/>
+            <ddns_reverse_zone/>
+            <ddns_qualifying_suffix/>
+            <ddns_dns_server/>
+            <ddns_dns_port/>
+            <ddns_domain_key_name/>
+            <ddns_domain_key_secret/>
+            <ddns_domain_key_algorithm/>
+            <ddns_override_no_update>0</ddns_override_no_update>
+            <ddns_override_client_update>0</ddns_override_client_update>
+            <ddns_update_on_renew>0</ddns_update_on_renew>
+            <ddns_conflict_resolution_mode/>
+            <description>VLAN40</description>
           </subnet4>
         </subnets>
         <reservations/>
@@ -2439,9 +2478,9 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
     </proxy>
   </OPNsense>
   <revision>
-    <username>(root)</username>
-    <description>/usr/local/opnsense/scripts/firmware/register.php made changes</description>
-    <time>1791722534.03</time>
+    <username>root@192.168.222.1</username>
+    <description>/api/kea/dhcpv4/add_subnet/ made changes</description>
+    <time>1791724969.13</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
