@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 7811 bytes
+Current configuration : 7879 bytes
 !
-! Last configuration change at 13:28:06 UTC Sun Oct 11 2026
+! Last configuration change at 15:21:16 UTC Sun Oct 11 2026
 !
 version 15.2
 service timestamps debug datetime msec
@@ -230,9 +230,11 @@ interface Vlan40
 !
 interface Vlan99
  ip address 10.10.99.1 255.255.255.0
+ standby version 2
  standby 1 ip 10.10.99.3
  standby 1 priority 110
  standby 1 preempt
+ standby 1 name HSRP-VLAN99
 !
 router ospf 1
  router-id 1.1.1.1
@@ -305,6 +307,7 @@ line aux 0
 line vty 0 4
  access-class VTY_ACCESS in
  login local
+ transport input ssh
 !
 !
 end
