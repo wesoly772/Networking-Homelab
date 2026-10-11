@@ -1722,7 +1722,7 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
           <server_port>53001</server_port>
         </general>
       </ddns>
-      <dhcp4 version="1.0.7" persisted_at="1791725039.96" description="Kea DHCPv4 configuration">
+      <dhcp4 version="1.0.7" persisted_at="1791725040.92" description="Kea DHCPv4 configuration">
         <general>
           <enabled>1</enabled>
           <manual_config>0</manual_config>
@@ -2479,8 +2479,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/kea/dhcpv4/set_subnet/47103714-cc4e-4c63-b6be-539879e4817a made changes</description>
-    <time>1791725039.96</time>
+    <description>/api/kea/dhcpv4/set made changes</description>
+    <time>1791725040.92</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
