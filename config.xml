@@ -73,6 +73,7 @@
       <ssl-ciphers/>
       <interfaces/>
       <compression/>
+      <noantilockout>1</noantilockout>
     </webgui>
     <disablenatreflection>yes</disablenatreflection>
     <usevirtualterminal>1</usevirtualterminal>
@@ -123,6 +124,11 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
       </git>
     </backup>
     <serialusb/>
+    <maximumstates/>
+    <maximumfrags/>
+    <aliasesresolveinterval/>
+    <maximumtableentries/>
+    <pfdebug>urgent</pfdebug>
   </system>
   <interfaces>
     <wan>
@@ -2479,8 +2485,8 @@ nfzCH1a2vnQTGvNeTiq7AAAAFXBhdHJ5azkzd2VzQGdtYWlsLmNvbQ==&#13;
   </OPNsense>
   <revision>
     <username>root@192.168.222.1</username>
-    <description>/api/firewall/filter/move_rule_before/8c7d03fa-c165-4874-b5a0-e1059e9797da/5f1fdfb5-3eda-48cb-a610-0f547fb0f12e made changes</description>
-    <time>1791725182.50</time>
+    <description>/system_advanced_firewall.php made changes</description>
+    <time>1791725392.18</time>
   </revision>
   <hasync version="1.0.2" persisted_at="1790095151.47" description="HA sync">
     <disablepreempt>0</disablepreempt>
